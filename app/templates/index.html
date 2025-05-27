@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Is It True?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <link rel="icon" href="{{ url_for('static', filename='img/icon.png') }}">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Cabeçalho-->
+        <header class="title-main">
+        <nav>
+            <a href="">Is It True?</a>
+            <div class="bright" id="bright" role="switch" aria-label="Alternar tema claro/escuro">
+                <div class="indicator"></div>
+                <div class="sun"><i class="bi bi-brightness-high-fill"></i></div>
+                <div class="moon"><i class="bi bi-moon-fill"></i></div> 
+            </div>
+        </nav>
+    </header>
+     
+    <main>
+        <section class="paragraph-apresentation">
+            <p>
+                Precisa fazer uma compra na internet, mas está com medo de tomar um golpe?<br>
+                Antes de comprar ou logar, verifique se um site específico é seguro e não está<br>
+                listado como suspeito devido aos dados do Google Safe Browsing.
+            </p>
+        </section>
+    
+        <section class="box-search">
+            <input id="urlInput" type="text" placeholder="Digite a URL aqui..." />
+            <button type="button" onclick="checkURL()">Verificar</button>
+        </section>
+        
+        <div class="resultado">
+            <pre id="result"></pre>
+        </div>
+
+        <section class="we-check" aria-label="Verificações realizadas">
+            <p class="pwe-check">Vamos verificar</p>
+            <ul>
+                <li>
+                    <img src="{{ url_for('static', filename='img/icon-reputation.png')}}" alt="Ícone de reputação" />
+                    <span class="span1">Reputação na internet</span>
+                </li>
+                <li>
+                    <img src="{{ url_for('static', filename='img/icon-time.png')}}" alt="Ícone de tempo" />
+                    <span class="span2">Tempo de registro</span>
+                </li>
+                <li>
+                    <img src="{{ url_for('static', filename='img/icon-security.png')}}" alt="Ícone de segurança" />
+                    <span class="span3">Site é verdadeiro</span>
+                </li>
+                <li>
+                    <img src="{{ url_for('static', filename='img/icon-stamp.png')}}" alt="Ícone de selos" />
+                    <span class="span4">Selos de segurança</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

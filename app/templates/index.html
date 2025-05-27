@@ -12,9 +12,8 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Cabeçalho-->
-        <header class="title-main">
+    <!-- Cabeçalho-->
+    <header class="title-main">
         <nav>
             <a href="">Is It True?</a>
             <div class="bright" id="bright" role="switch" aria-label="Alternar tema claro/escuro">
@@ -25,24 +24,28 @@
         </nav>
     </header>
      
+    <!--Parágrafo-->
     <main>
         <section class="paragraph-apresentation">
             <p>
                 Precisa fazer uma compra na internet, mas está com medo de tomar um golpe?<br>
                 Antes de comprar ou logar, verifique se um site específico é seguro e não está<br>
-                listado como suspeito devido aos dados do Google Safe Browsing.
+                listado como suspeito devido aos dados do VirusTotal.
             </p>
         </section>
     
+        <!--Campo de verificação e Botão-->
         <section class="box-search">
             <input id="urlInput" type="text" placeholder="Digite a URL aqui..." />
             <button type="button" onclick="checkURL()">Verificar</button>
         </section>
         
+        <!--Campo do relátorio-->
         <div class="resultado">
             <pre id="result"></pre>
         </div>
 
+        <!--Icones ao final da página-->
         <section class="we-check" aria-label="Verificações realizadas">
             <p class="pwe-check">Vamos verificar</p>
             <ul>
@@ -67,5 +70,4 @@
     </main>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
-
 </html>

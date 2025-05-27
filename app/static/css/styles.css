@@ -14,6 +14,7 @@ body {
     transition: 0.5s;
 }
 
+/* Cabeçalho */
 .title-main{
     color: #fff;
     background: linear-gradient(to right, #7B68EE, #9370DB) ;
@@ -29,6 +30,7 @@ a{
     font-weight: bold;
 }
 
+/* Tema dark */
 .bright{ 
     position: absolute;
     right: 0;
@@ -122,6 +124,7 @@ body.dark span{
     font-size: 15px;
 }
 
+/* Parágrafo */
 .paragraph-apresentation{
     position: relative;
     top: 150px;
@@ -133,6 +136,7 @@ body.dark span{
     font-size: 20px;
 }
 
+/* Campo de verificação e botão */
 .box-search{
     position: relative;
     display: flex;
@@ -171,6 +175,7 @@ button:hover{
     transition: 0.5s;
 }
 
+/* resultado */
 #result {
     margin: 0 auto;
     margin-top: 50px;
@@ -188,6 +193,7 @@ button:hover{
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
 }
 
+/* Ícones */
 .we-check {
     text-align: center;
     display: flex;
